@@ -9,7 +9,7 @@ import DashboardScreen from '@/screens/dashboard/DashboardScreen';
 import CategoriesScreen from '@/screens/marketplace/CategoriesScreen';
 import LeadInboxScreen from '@/screens/leads/LeadInboxScreen';
 import ChatListScreen from '@/screens/chat/ChatListScreen';
-// import ProfileScreen from '@/screens/profile/ProfileScreen';
+import ProfileScreen from '@/screens/profile/ProfileScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -39,8 +39,7 @@ export default function MainTabs() {
       <Tab.Screen name={Routes.MarketplaceTab} component={CategoriesScreen} options={{ title: 'Marketplace' }} />
       <Tab.Screen name={Routes.LeadsTab} component={LeadInboxScreen} options={{ title: 'Leads' }} />
       <Tab.Screen name={Routes.ChatTab} component={ChatListScreen} options={{ title: 'Chat', tabBarBadge: unread > 0 ? unread : undefined }} />
-      <Tab.Screen name={Routes.ProfileTab} component={ChatListScreen} options={{ title: 'Profile' }} />
-      {/* <Tab.Screen name={Routes.ProfileTab} component={ProfileScreen} options={{ title: 'Profile' }} /> */}
+      <Tab.Screen name={Routes.ProfileTab} component={ProfileScreen} options={{ title: 'Profile' }} />
     </Tab.Navigator>
   );
 }

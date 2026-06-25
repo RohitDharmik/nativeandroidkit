@@ -30,21 +30,21 @@ import AnalyticsScreen from '@/screens/analytics/AnalyticsScreen';
 
 import SupportTicketsScreen from '@/screens/support/SupportTicketsScreen';
 import TicketDetailScreen from '@/screens/support/TicketDetailScreen';
-// import FAQScreen from '@/screens/support/FAQScreen';
-// import KnowledgeBaseScreen from '@/screens/support/KnowledgeBaseScreen';
-// import LiveChatScreen from '@/screens/support/LiveChatScreen';
+import FAQScreen from '@/screens/support/FAQScreen';
+import KnowledgeBaseScreen from '@/screens/support/KnowledgeBaseScreen';
+import LiveChatScreen from '@/screens/support/LiveChatScreen';
 
-// import EditProfileScreen from '@/screens/profile/EditProfileScreen';
-// import KYCScreen from '@/screens/profile/KYCScreen';
-// import SettingsScreen from '@/screens/profile/SettingsScreen';
-// import NotificationSettingsScreen from '@/screens/profile/NotificationSettingsScreen';
-// import PrivacySettingsScreen from '@/screens/profile/PrivacySettingsScreen';
-// import ChangePasswordScreen from '@/screens/profile/ChangePasswordScreen';
+import EditProfileScreen from '@/screens/profile/EditProfileScreen';
+import KYCScreen from '@/screens/profile/KYCScreen';
+import SettingsScreen from '@/screens/profile/SettingsScreen';
+import NotificationSettingsScreen from '@/screens/profile/NotificationSettingsScreen';
+import PrivacySettingsScreen from '@/screens/profile/PrivacySettingsScreen';
+import ChangePasswordScreen from '@/screens/profile/ChangePasswordScreen';
 
 import InquiryScreen from '@/screens/marketplace/InquiryScreen';
 import BookConsultationScreen from '@/screens/marketplace/BookConsultationScreen';
 import AIAssistantScreen from '@/screens/marketplace/AIAssistantScreen';
-// import AdminDashboardScreen from '@/screens/admin/AdminDashboardScreen';
+import AdminDashboardScreen from '@/screens/admin/AdminDashboardScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -88,11 +88,11 @@ export default function AppStack() {
       {/* Support */}
       <Stack.Screen name={Routes.SupportTickets} component={SupportTicketsScreen} />
       <Stack.Screen name={Routes.TicketDetail} component={TicketDetailScreen} />
-      {/* <Stack.Screen name={Routes.FAQ} component={FAQScreen} />
+      <Stack.Screen name={Routes.FAQ} component={FAQScreen} />
       <Stack.Screen name={Routes.KnowledgeBase} component={KnowledgeBaseScreen} />
       <Stack.Screen name={Routes.LiveChat} component={LiveChatScreen} />
 
-       
+      {/* Profile */}
       <Stack.Screen name={Routes.EditProfile} component={EditProfileScreen} />
       <Stack.Screen name={Routes.KYC} component={KYCScreen} />
       <Stack.Screen name={Routes.Settings} component={SettingsScreen} />
@@ -100,8 +100,8 @@ export default function AppStack() {
       <Stack.Screen name={Routes.PrivacySettings} component={PrivacySettingsScreen} />
       <Stack.Screen name={Routes.ChangePassword} component={ChangePasswordScreen} />
 
-    
-      <Stack.Screen name={Routes.AdminDashboard} component={AdminDashboardScreen} /> */}
+      {/* Admin */}
+      <Stack.Screen name={Routes.AdminDashboard} component={AdminDashboardScreen} />
     </Stack.Navigator>
   );
 }
