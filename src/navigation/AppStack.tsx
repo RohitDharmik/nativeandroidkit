@@ -45,6 +45,16 @@ import InquiryScreen from '@/screens/marketplace/InquiryScreen';
 import BookConsultationScreen from '@/screens/marketplace/BookConsultationScreen';
 import AIAssistantScreen from '@/screens/marketplace/AIAssistantScreen';
 import AdminDashboardScreen from '@/screens/admin/AdminDashboardScreen';
+import UserManagementScreen from '@/screens/admin/UserManagementScreen';
+import ListingApprovalsScreen from '@/screens/admin/ListingApprovalsScreen';
+import CategoryManagementScreen from '@/screens/admin/CategoryManagementScreen';
+import PaymentsScreen from '@/screens/admin/PaymentsScreen';
+import PlansManagementScreen from '@/screens/admin/PlansManagementScreen';
+import ReportsScreen from '@/screens/admin/ReportsScreen';
+import FormBuilderScreen from '@/screens/admin/FormBuilderScreen';
+import AnnouncementsScreen from '@/screens/admin/AnnouncementsScreen';
+import VendorApprovalsScreen from '@/screens/admin/VendorApprovalsScreen';
+import VendorApprovalDetailScreen from '@/screens/admin/VendorApprovalDetailScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -102,6 +112,17 @@ export default function AppStack() {
 
       {/* Admin */}
       <Stack.Screen name={Routes.AdminDashboard} component={AdminDashboardScreen} />
+      <Stack.Screen name={Routes.AdminVendorApprovals} component={VendorApprovalsScreen} />
+      <Stack.Screen name={Routes.AdminUsers} component={UserManagementScreen} />
+      <Stack.Screen name={Routes.AdminListings} component={ListingApprovalsScreen} />
+      <Stack.Screen name={Routes.AdminCategories} component={CategoryManagementScreen} />
+      <Stack.Screen name={Routes.AdminPlans} component={PlansManagementScreen} />
+      <Stack.Screen name={Routes.AdminPayments} component={PaymentsScreen} />
+      <Stack.Screen name={Routes.AdminReports} component={ReportsScreen} />
+      <Stack.Screen name={Routes.AdminFormBuilder} component={FormBuilderScreen} />
+      <Stack.Screen name={Routes.AdminAnnouncements} component={AnnouncementsScreen} />
+      <Stack.Screen name={Routes.AdminVendorApprovalDetail} component={VendorApprovalDetailScreen} />
+ 
     </Stack.Navigator>
   );
 }

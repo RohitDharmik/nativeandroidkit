@@ -80,6 +80,17 @@ export const Routes = {
 
   // Admin
   AdminDashboard: 'AdminDashboard',
+  AdminVendorApprovals: 'AdminVendorApprovals',
+  AdminUsers: 'UserManagementScreen',
+  AdminListings: 'ListingApprovalsScreen',
+  AdminCategories: 'CategoryManagementScreen',
+  AdminPlans: 'PlansManagementScreen',
+  AdminPayments: 'PaymentsScreen',
+  AdminReports: 'ReportsScreen',
+  AdminFormBuilder: 'FormBuilderScreen',
+  AdminAnnouncements: 'AnnouncementsScreen',
+  AdminVendorApprovalDetail: 'VendorApprovalDetailScreen',
+
 } as const;
 
 export type RouteName = (typeof Routes)[keyof typeof Routes];
